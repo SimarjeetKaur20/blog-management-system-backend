@@ -1,4 +1,3 @@
-
 /* CREATE POST (already OK) */
 const Post = require("../models/Post");
 
