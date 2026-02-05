@@ -1,6 +1,5 @@
 /* CREATE POST (already OK) */
 const Post = require("../models/Post");
-
 exports.createPost = async (req, res) => {
   try {
     const { title, content } = req.body;
@@ -8,7 +7,6 @@ exports.createPost = async (req, res) => {
     if (!title || !content) {
       return res.status(400).json({ message: "Title and content required" });
     }
-
     const post = new Post({
       title,
       content,
